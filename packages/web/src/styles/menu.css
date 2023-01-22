@@ -1,0 +1,124 @@
+@import url("https://css.gg/chevron-down.css");
+
+.menu-item {
+  min-width: 25vw;
+  display: flex;
+  justify-content: flex-start;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.menu-item img {
+  max-width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.menu-item-detail {
+  width: 250px;
+  margin-left: 1rem;
+}
+
+.menu-item-price {
+  display: flex;
+  margin: 0.3rem 0;
+}
+
+.menu-modal-container {
+  position: fixed;
+  z-index: 2;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.modal-content {
+  width: 60%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  overflow-y: auto;
+  padding-bottom: 1rem;
+}
+
+.modal-content img {
+  max-height: 400px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.modal-title {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title p {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.modal-detail {
+  margin: 0 1rem;
+}
+
+.modal-price {
+  padding-top: 1rem;
+}
+
+.modal-price p {
+  font-size: 1.5rem;
+}
+
+.modal-discount {
+  display: flex;
+  align-items: center;
+}
+
+.close-icon {
+  margin-right: 1rem;
+}
+
+.divider {
+  margin: 1rem 0;
+  border-top: 2px solid lightgray;
+}
+
+.option-label {
+  font-size: 1.2rem;
+}
+
+.option-choice {
+  padding: 0.2rem 0;
+}
+
+@media only screen and (max-width: 400px) {
+  .menu-item {
+    width: 80vw;
+  }
+  .menu-item img {
+    max-width: 100px;
+    height: 100px;
+  }
+
+  .modal-title p {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .modal-content {
+    width: 100%;
+  }
+  .modal-content img {
+    max-height: 250px;
+  }
+}

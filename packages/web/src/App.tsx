@@ -1,10 +1,24 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import RestaurantPage from "./pages/restaurant";
+import RestaurantInfoPage from "./pages/restaurant/info";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RestaurantPage />,
+  },
+  {
+    path: "/restaurant/:restaurantId",
+    element: <RestaurantInfoPage />,
+  },
+]);
 
 function App() {
   return (
     <div>
-      <h1>Edit this app to complete LINE MAN Wongnai Frontend Assignment!</h1>
+      <RouterProvider router={router} />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

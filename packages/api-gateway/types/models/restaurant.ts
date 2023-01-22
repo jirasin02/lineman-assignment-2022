@@ -2,7 +2,7 @@ export type RestaurantResponse = {
   name: string;
   id: number;
   coverImage: string;
-  menus: String[];
+  menus: string[];
   activeTimePeriod: ActiveTimePeriod;
 };
 
